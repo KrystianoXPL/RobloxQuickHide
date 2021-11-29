@@ -32,9 +32,8 @@ function HideSelection()
 					parentTag.Value = obj.Parent -- Saves the previous parent so that we know where to restore it to later.
 					parentTag.Name = TAG_PREFIX .. TAG_PARENT
 					parentTag.Parent = obj
-
-					obj.Parent = hiddenFolder
 				end
+				obj.Parent = hiddenFolder
 			end
 		else
 			print("QuickHide: No selected objects to hide!")
